@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oil Conversion</title>
+    <style>
+        .flex-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .text-container {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .image-container {
+            flex-grow: 1;
+        }
+        .image-container img {
+            width: 100%; /* Adjust the size as needed */
+            max-width: 300px; /* Adjust maximum width as needed */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="image-container">
+            <img src="https://media.istockphoto.com/id/1250715834/vector/oil-barrel-icon-design-vector-template.jpg?s=612x612&w=0&k=20&c=W6t5ZWRbqaNOwkAojPz7fR1NQIxsoQgW9VuD0-6cx5M=" alt="Oil Barrel Image">
+        </div>
+        <div class="text-container">
+            <h1>Oil Currency exchanger</h1>
+            <p>{{select}} is {{ vals }} per $1</p>
+        </div>
+        <div class="image-container">
+            <img src="https://media.istockphoto.com/id/1250715834/vector/oil-barrel-icon-design-vector-template.jpg?s=612x612&w=0&k=20&c=W6t5ZWRbqaNOwkAojPz7fR1NQIxsoQgW9VuD0-6cx5M=" alt="Oil Barrel Image">
+        </div>
+    </div>
+</body>
+</html>
