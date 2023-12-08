@@ -1,5 +1,5 @@
 import requests
-
+#Oil API
 api_key = 'OjA6ZtTt34XW29iJVpe6gIAGZI8eyNn404pQpNKJ'
 
 api_endpoint = 'https://api.eia.gov/v2/petroleum/pri/fut/data/'
