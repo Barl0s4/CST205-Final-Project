@@ -29,7 +29,28 @@ from flask import Flask, render_template, request
 import requests
 from forex_python.converter import CurrencyRates
 
+import numpy as np
+import matplotlib.pyplot as plt
+
 app = Flask(__name__)
+
+# Takes the USD value, currency name to be compaired, currency value vs. USD, and the price of barrel to generate a bar graph. The graph is saved for use.
+def graph(usdval, currency, curval, oil_price):
+    # creating the dataset
+    crbarrel = currency + " barrel"
+    data = {'USD': usdval, currency:curval, 'UDS barrel':oil_price, crbarrel:(curval*oilprice)}
+    courses = list(data.keys())
+    values = list(data.values())
+  
+    fig = plt.figure(figsize = (10, 4))
+ 
+    # creating the bar plot
+    plt.bar(courses, values, color ='blue', width = 0.4)
+ 
+    plt.xlabel("Types")
+    plt.ylabel("Values")
+    plt.title("Comparison of currency and barrel prices")
+    plt.savefig('barrel_graph.png')
 
 # Function to get the latest oil price
 def get_latest_oil_price():
