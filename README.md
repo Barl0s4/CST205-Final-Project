@@ -60,8 +60,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)<br>
 Petrodollars are U.S. dollars paid to an oil-exporting country and they are the source of revenue when selling oil. 
 Our project aims to help make the process of purchasing oil less steps for consumers that use a different currency by providing the most recent price of oil and letting the user choose a currency of their choice for the current price to be converted into.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -106,11 +104,19 @@ Our project aims to help make the process of purchasing oil less steps for consu
    ```sh
    pip install pillow
    ```
-9. Clone the repo
+9. Install numpy
+    ```sh
+    pip install numpy
+    ```
+10. Install Matplotlib
+    ```sh
+    pip install matplotlib
+    ```
+11. Clone the repo
    ```sh
    git clone https://github.com/Barl0s4/CST205-Final-Project.git
    ```
-10. Enter your API in `test.py`
+12. Enter your API in `test.py`
    ```js
    api_key = 'Enter API Key'
    ```
