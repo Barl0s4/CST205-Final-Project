@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oil Conversion</title>
+        {{ bootstrap.load_css() }}
+    </head>
+    <body style="background: rgb(254, 255, 239);">
+        <div class="box" style="background: rgb(173, 173, 6); padding-left: 20px; margin-bottom: 30px;">
+            <h4 class="display-4" style="color: rgb(255, 255, 255);">OilConverter.com</h4>
+        </div>
+        <div class="row" style="margin: 20px;">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h6 class="display-6">Current Oil Price:</h6>
+                  <div class="price" style="display: inline-block;">
+                    <h6 class="display-6" style="display: inline-block; background-color: rgb(202, 202, 202); border-radius: 15px; padding: 10px; border-style: solid;">${{oil_price}}</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>  
+        <div class="row" style="margin: 20px;">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center" style="display: flex; justify-content: space-evenly;">
+                        <div class="card" style="width: 10rem;">
+                            <div class="card-body d-flex align-items-center">
+                                <img class="img-fluid rounded-start" src="/static/images/united-states-of-america.png" alt="USA Flag" style="width: 40px; height: 40px;">
+                                <h6 class="display-6" style="margin-left: 10px; margin-bottom: 0;">USD</h6>
+                            </div>
+                        </div>
+                        <button onclick="convertCurrency()" class="btn btn-primary btn-lg" style="background-color: rgb(173, 173, 6);">&#8594;</button>
+                        <select id="desiredCurrency" class="form-select form-select-lg" style="width: 24%; padding-top: 5px; padding-bottom: 5px; font-size: calc(1.375rem + 1.5vw); font-weight:300;" aria-label=".form-select-lg example">
+                            {% for code, rate in currencies.items() %}
+                                <option value="{{ code }}">{{ code }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div id="result" style="margin: 20px; display: none; background-color: rgb(202, 202, 202); border-radius: 15px; padding: 10px; border-style: solid;"></div>
+                </div>
+            </div>
+        </div>
+        
+        {{ bootstrap.load_js() }}
+        <script>
+            var oilPrice = {{ oil_price }};
+            var currencies = {
+                {% for code, rate in currencies.items() %}
+                    '{{ code }}': {{ rate }},
+                {% endfor %}
+            };
+            
+            function convertCurrency() {
+                var amount = oilPrice;
+                var fromCurrency = 'USD';
+                var toCurrency = document.getElementById('desiredCurrency').value;
+    
+                // Perform the currency conversion using JavaScript
+                var conversion = amount * currencies[toCurrency];
+                
+                // Display the result
+                if (!isNaN(conversion)) {
+                    var resultElement = document.getElementById('result');
+                    resultElement.innerHTML = conversion.toFixed(2) + ' ' + toCurrency;
+                    resultElement.style.display = 'inline-block';
+                }
+            }
+        </script>
+    </body>
+</html>
