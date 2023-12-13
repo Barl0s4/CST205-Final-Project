@@ -1,3 +1,8 @@
+#Course: CST205-01
+#Petro Dollar Converter
+#Colin Steele, Darius Cuevas, Sergio Zavala, Riley Claunch, Carlos Guizar
+#Date: 12/13/23
+
 from flask import Flask, render_template, request
 import requests
 from forex_python.converter import CurrencyRates
