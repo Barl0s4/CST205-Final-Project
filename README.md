@@ -128,14 +128,10 @@ Our project aims to help make the process of purchasing oil less steps for consu
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+<p>When using the website, you are provided with the current oil price, a graph of how the price has fluctuated throughout the years, and our currency converter.</p>
 <img width="1511" alt="Untitled" src="https://github.com/Barl0s4/CST205-Final-Project/assets/106635253/9103d27c-38e5-47a5-a5f5-5a6729f3acad">
-When using the website, you are provided with the current oil price, a his
+<p>To use the converter, you would just have to select any of the available currencies and click the button to display the converted the displayed price of oil.</p>
 <img width="1512" alt="iother" src="https://github.com/Barl0s4/CST205-Final-Project/assets/106635253/996c3880-ca0e-411f-b510-9421b8658c8a">
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
