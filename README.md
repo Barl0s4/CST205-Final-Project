@@ -135,18 +135,6 @@ Our project aims to help make the process of purchasing oil less steps for consu
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- CONTACT -->
-## Contact
-
-Colin Steele - [LinkedIn](www.linkedin.com/in/)<br>
-Carlos Guizar - [LinkedIn](www.linkedin.com/in/)<br>
-Darius Cuevas - [LinkedIn](www.linkedin.com/in/) <br>
-Sergio Zavala - [LinkedIn](www.linkedin.com/in/sergiozavala1) 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
