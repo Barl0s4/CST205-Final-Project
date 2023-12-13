@@ -26,6 +26,7 @@
   </a>
 
   <h3 align="center">Oil Conversion</h3>
+  <h6 align="center">Class: CST205</h6>
 </div>
 
 
