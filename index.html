@@ -51,7 +51,8 @@
         <div class="row" style="margin-top: -350px; margin-left: 100px">
             <div class="col-sm-6 offset-sm-6">
                 <div class="image-container" style="margin-bottom: 100px;">
-                    <img src="{{ url_for('static', filename=graph_image_path) }}" alt="Comparison Graph" style="width: 280px; height: 300px; border-radius: 10px;">
+                    <h3>Historical prices for oil</h3>
+                    <iframe id="eia_widget" style="width: 50%; height: 300px;" src="//www.eia.gov/opendata/embed/iframev2.php?api_key=OjA6ZtTt34XW29iJVpe6gIAGZI8eyNn404pQpNKJ&api_version=v2&data=%5B%22value%22%5D&facet_params=%7B%22duoarea%22:%5B%22YCUOK%22%5D,%22process%22:%5B%22PF4%22%5D,%22product%22:%5B%22EPCWTI%22%5D,%22series%22:%5B%22RWTC%22%5D%7D&freq=weekly&url=/v2/petroleum/pri/spt/data/&title=duoarea:%20YCUOK%20process:%20PF4%20product:%20EPCWTI%20series:%20RWTC%20"> </iframe>
                 </div>
             </div>
         </div>
