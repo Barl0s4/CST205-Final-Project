@@ -38,7 +38,7 @@ app = Flask(__name__)
 def graph(usdval, currency, curval, oil_price):
     # creating the dataset
     crbarrel = currency + " barrel"
-    data = {'USD': usdval, currency:curval, 'UDS barrel':oil_price, crbarrel:(curval*oilprice)}
+    data = {'USD': usdval, currency:curval, 'UDS barrel':oil_price, crbarrel:(curval*oil_price)}
     courses = list(data.keys())
     values = list(data.values())
   
