@@ -70,6 +70,7 @@ Our project aims to help make the process of purchasing oil less steps for consu
 
 * [![Python][Python.com]][Python-url]
 * ![HTML.com][HTML]
+* ![JS][JavaScript]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -165,3 +166,4 @@ Sergio Zavala - [LinkedIn](www.linkedin.com/in/sergiozavala1)
 [Python.com]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
 [Python-url]: https://www.python.org/
 [HTML]: https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
+[JavaScript]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
