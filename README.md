@@ -26,7 +26,7 @@
   </a>
 
   <h3 align="center">Oil Conversion</h3>
-  <h6 align="center">Class: CST205</h6>
+  <h6 align="center">Class: CST205<br> Team: <br>Colin Steele<br>Carlos Guizar<br>Sergio Zavala<br>Riley Claunch<br>Darius Cuevas</h6>
 </div>
 
 
